@@ -3,12 +3,43 @@
 #include <string>
 #include <filesystem>
 using namespace std;// /Users/macmini/Desktop/table/xcode-c++/A/A/main.cpp
-string bbh="00011";
+string bbh="00010";
 void mian();
 int main(){
     cout << bbh;
+    for(int i=0;i<10;i++)cout << endl << endl << endl;
     mian();
 }
+void fgf(int a,int b){
+    for(int i=0;i<a;i++){
+        if(b==1)
+        cout << '-';
+        if(b==0)
+        cout <<"_";
+    }
+}
 void mian(){
-    cout << "hello wored";
+    cout <<"源码地址：https://github.com/edulcni/edulcni｜A1.txt为版本，AAA.cpp为源码";
+    fgf(30,0);
+    cout  <<endl<< "=        '课堂积分系统'        ="<<endl<<'|';
+    fgf(28,1);cout << '|';
+    cout <<endl<< '|'<<"   A.++  |  B.--  |  c.==   "<<'|'<<endl;
+    cout <<'|';fgf(28,1);cout << '|';
+    cout << endl << "|   please cin A,B or C; "<<"    |"<<endl;
+    fgf(30,1);cout << endl;
+    cout <<"-请不要修改任何数据，建议小写字母使用-"<<endl;
+    cout <<"cin to//";
+    char abc;
+    cin >> abc;
+    if(abc!='A'&&abc!='b'&&abc!='C'&&abc!='a'&&abc!='b'&&abc!='c'){
+        for(int i=0;i<10;i++)cout << endl<<endl;
+        cout << "|输入不合法,将会重定向|";
+        for(int i=0;i<70000;i++){
+            for(int j=0;j<i;j++){//何延时
+                int qwe = 0;qwe++;
+            }
+        }
+        for(int i=0;i<100;i++)cout << endl<<endl;
+        return mian();
+    }
 }
