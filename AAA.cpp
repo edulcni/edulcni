@@ -3,7 +3,7 @@
 #include <string>
 #include <filesystem>
 using namespace std;// /Users/macmini/Desktop/table/xcode-c++/A/A/main.cpp
-string bbh="00010";
+string bbh="00011";
 void mian();
 int main(){
     cout << bbh;
@@ -32,14 +32,7 @@ void mian(){
     char abc;
     cin >> abc;
     if(abc!='A'&&abc!='b'&&abc!='C'&&abc!='a'&&abc!='b'&&abc!='c'){
-        for(int i=0;i<10;i++)cout << endl<<endl;
         cout << "|输入不合法,将会重定向|";
-        for(int i=0;i<70000;i++){
-            for(int j=0;j<i;j++){//何延时
-                int qwe = 0;qwe++;
-            }
-        }
-        for(int i=0;i<100;i++)cout << endl<<endl;
         return mian();
     }
 }
