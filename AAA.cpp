@@ -3,7 +3,7 @@
 #include <string>
 #include <filesystem>
 using namespace std;// /Users/macmini/Desktop/table/xcode-c++/A/A/main.cpp
-string bbh="00011";
+string bbh="00010";
 void mian();
 int main(){
     cout << bbh;
@@ -28,6 +28,9 @@ void mian(){
     cout << endl << "|   please cin A,B or C; "<<"    |"<<endl;
     fgf(30,1);cout << endl;
     cout <<"-请不要修改任何数据，建议小写字母使用-"<<endl;
+    for(int i=0;i<5;i++){
+        cout << endl;
+    }
     cout <<"cin to//";
     char abc;
     cin >> abc;
