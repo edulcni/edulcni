@@ -3,7 +3,7 @@
 #include <string>
 #include <filesystem>
 using namespace std;// /Users/macmini/Desktop/table/xcode-c++/A/A/main.cpp
-string bbh="00011";
+string bbh="00010";
 void mian();
 int main(){
     cout << bbh;
@@ -19,7 +19,7 @@ void fgf(int a,int b){
     }
 }
 void mian(){
-    cout <<"源码地址：https://github.com/edulcni/edulcni｜A1.txt为版本，AAA.cpp为源码";
+    cout <<"源码地址：https://github.com/edulcni/edulcni";
     fgf(30,0);
     cout  <<endl<< "=        '课堂积分系统'        ="<<endl<<'|';
     fgf(28,1);cout << '|';
