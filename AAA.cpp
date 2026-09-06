@@ -25,7 +25,7 @@ int main(){
     hx(30);
     while(1){
         cout << endl;
-        for(int i=1;i<100;i++){
+        for(int i=1;i<150;i++){
             if(a[i]!=0&&rand()%2==1&&a[i-1]==0){
                 if(rand()%2==0){
                     cout << 1 ;
