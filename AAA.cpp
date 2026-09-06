@@ -2,43 +2,56 @@
 #include <fstream>
 #include <string>
 #include <filesystem>
-using namespace std;// /Users/macmini/Desktop/table/xcode-c++/A/A/main.cpp
+#include <sys/stat.h>
+#include <ctime>
+#include <string>
+#include <climits>
+#include <mach-o/dyld.h>
+using namespace std;
+int a[100];
 string bbh="00011";
-void mian();
-int main(){
-    cout << bbh;
-    for(int i=0;i<10;i++)cout << endl << endl << endl;
-    mian();
-}
-void fgf(int a,int b){
+void hx(int a){
     for(int i=0;i<a;i++){
-        if(b==1)
-        cout << '-';
-        if(b==0)
-        cout <<"_";
+            cout << "—";
     }
 }
-void mian(){
-    cout <<"源码地址：https://github.com/edulcni/edulcni"<<endl;
-    fgf(30,0);
-    cout  <<endl<< "=        课堂积分系统        ="<<endl<<'|';
-    fgf(28,1);cout << '|';
-    cout <<endl<< '|'<<"   1.++  |  2.--  |  3.==   "<<'|'<<endl;
-    cout <<'|';fgf(28,1);cout << '|';
-    cout << endl << "|   please cin 1,2 or 3; "<<"    |"<<endl;
-    fgf(30,1);cout << endl;
-    cout <<"-请不要修改任何数据，整体建议小写字母使用，此处为数字-"<<endl;
-    for(int i=0;i<17;i++){
+int main(){
+    cout <<"the this is  "<< bbh;
+    system("sleep 1");
+    cout << "only APPLE can do ";
+    for(int i=0;i<30;i++){
         cout << endl;
     }
-    fgf(10,0);cout << endl;
-    cout <<"cin to//";
-    char abc;
-    cin >> abc;
-    if(abc!='A'&&abc!='b'&&abc!='C'&&abc!='a'&&abc!='b'&&abc!='c'){
-        cout << "|输入不合法,将会重定向|";
-        return mian();
-    }else{
-        
+    hx(30);
+    while(1){
+        cout << endl;
+        for(int i=1;i<100;i++){
+            if(a[i]!=0&&rand()%2==1&&a[i-1]==0){
+                if(rand()%2==0){
+                    cout << 1 ;
+                }else{
+                    cout << 0 ;
+                }
+                a[i]=1;
+            }else if(a[i]!=0&&rand()%2==1&&a[i-1]==0){
+                if(rand()%2==0){
+                    cout << 1 ;
+                }else{
+                    cout << 0 ;
+                }
+                a[i]=1;
+            }else if(rand()%70==1&&a[i-1]==0){
+                if(rand()%2==0){
+                    cout << 1 ;
+                }else{
+                    cout << 0 ;
+                }
+                a[i]=1;
+            }else {
+                a[i]=0;
+                cout << ' ';
+            }
+        }
+        system("sleep 0.2");
     }
 }
