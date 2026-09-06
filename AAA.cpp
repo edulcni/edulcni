@@ -21,7 +21,7 @@ void fgf(int a,int b){
 void mian(){
     cout <<"源码地址：https://github.com/edulcni/edulcni"<<endl;
     fgf(30,0);
-    cout  <<endl<< "=        \030[1.33;43m课堂积分系统\030[0m        ="<<endl<<'|';
+    cout  <<endl<< "=        课堂积分系统        ="<<endl<<'|';
     fgf(28,1);cout << '|';
     cout <<endl<< '|'<<"   1.++  |  2.--  |  3.==   "<<'|'<<endl;
     cout <<'|';fgf(28,1);cout << '|';
