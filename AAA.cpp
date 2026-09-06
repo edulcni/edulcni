@@ -21,13 +21,13 @@ void fgf(int a,int b){
 void mian(){
     cout <<"源码地址：https://github.com/edulcni/edulcni"<<endl;
     fgf(30,0);
-    cout  <<endl<< "=        '课堂积分系统'        ="<<endl<<'|';
+    cout  <<endl<< "=        \030[1.33;43m课堂积分系统\030[0m        ="<<endl<<'|';
     fgf(28,1);cout << '|';
-    cout <<endl<< '|'<<"   A.++  |  B.--  |  c.==   "<<'|'<<endl;
+    cout <<endl<< '|'<<"   1.++  |  2.--  |  3.==   "<<'|'<<endl;
     cout <<'|';fgf(28,1);cout << '|';
-    cout << endl << "|   please cin A,B or C; "<<"    |"<<endl;
+    cout << endl << "|   please cin 1,2 or 3; "<<"    |"<<endl;
     fgf(30,1);cout << endl;
-    cout <<"-请不要修改任何数据，建议小写字母使用-"<<endl;
+    cout <<"-请不要修改任何数据，整体建议小写字母使用，此处为数字-"<<endl;
     for(int i=0;i<17;i++){
         cout << endl;
     }
@@ -38,5 +38,7 @@ void mian(){
     if(abc!='A'&&abc!='b'&&abc!='C'&&abc!='a'&&abc!='b'&&abc!='c'){
         cout << "|输入不合法,将会重定向|";
         return mian();
+    }else{
+        
     }
 }
